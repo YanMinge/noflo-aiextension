@@ -1,0 +1,34 @@
+{
+  "name": "noflo-aiextension",
+  "description": "matatalab design for AI feature",
+  "version": "0.1.0",
+  "author": {
+    "name": "Yanminge",
+    "email": "guojia198769@163.com",
+    "url": "www.matatalab.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/YanMinge/noflo-aiextension.git"
+  },
+  "scripts": {
+    "pretest": "eslint components/*.js",
+    "test": "fbp-spec --secret test --address ws://localhost:3333 --command 'noflo-nodejs --port 3333 --capture-output --catch-exceptions --secret test' spec/"
+  },
+  "dependencies": {
+    "noflo": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "eslint": "^5.0.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "fbp-spec": "^0.6.0",
+    "mocha": "^6.0.0",
+    "noflo-nodejs": "^0.11.0"
+  },
+  "keywords": [
+    "noflo",
+    "ecosystem:noflo"
+  ]
+}
