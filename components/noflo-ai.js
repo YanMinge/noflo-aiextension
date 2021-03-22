@@ -10,7 +10,7 @@ exports.getComponent = () => {
   c.icon = 'cog';
 
   // Provide a description on component usage
-  c.description = 'do X';
+  c.description = 'just for test';
 
   // Add input ports
   c.inPorts.add('in', {

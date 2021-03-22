@@ -7,10 +7,10 @@ exports.getComponent = () => {
   const c = new noflo.Component();
 
   // Define a meaningful icon for component from http://fontawesome.io/icons/
-  c.icon = 'cog';
+  c.icon = 'cubes';
 
   // Provide a description on component usage
-  c.description = 'do X';
+  c.description = 'do mnist data process';
 
   // Add input ports
   c.inPorts.add('in', {
