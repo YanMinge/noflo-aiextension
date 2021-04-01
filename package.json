@@ -16,7 +16,9 @@
     "test": "fbp-spec --secret test --address ws://localhost:3333 --command 'noflo-nodejs --port 3333 --capture-output --catch-exceptions --secret test' spec/"
   },
   "dependencies": {
-    "noflo": "^1.0.0"
+    "noflo": "^1.0.0",
+    "@tensorflow/tfjs": "2.0.0",
+    "get-pixels": "^3.3.2"
   },
   "devDependencies": {
     "chai": "^4.0.0",
@@ -25,9 +27,7 @@
     "eslint-plugin-import": "^2.8.0",
     "fbp-spec": "^0.6.0",
     "mocha": "^6.0.0",
-    "noflo-nodejs": "^0.11.0",
-    "@tensorflow/tfjs": "2.0.0",
-    "get-pixels": "^3.3.2"
+    "noflo-nodejs": "^0.11.0"
   },
   "keywords": [
     "noflo",
