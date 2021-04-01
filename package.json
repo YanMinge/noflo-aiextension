@@ -1,7 +1,7 @@
 {
   "name": "noflo-aiextension",
   "description": "matatalab design for AI feature",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Yanminge",
     "email": "guojia198769@163.com",
@@ -25,7 +25,9 @@
     "eslint-plugin-import": "^2.8.0",
     "fbp-spec": "^0.6.0",
     "mocha": "^6.0.0",
-    "noflo-nodejs": "^0.11.0"
+    "noflo-nodejs": "^0.11.0",
+    "@tensorflow/tfjs": "2.0.0",
+    "get-pixels": "^3.3.2"
   },
   "keywords": [
     "noflo",

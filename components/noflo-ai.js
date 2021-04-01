@@ -10,11 +10,12 @@ exports.getComponent = () => {
   c.icon = 'cog';
 
   // Provide a description on component usage
-  c.description = 'do X';
+  c.description = 'just for test canvas';
 
   // Add input ports
-  c.inPorts.add('in', {
-    datatype: 'string',
+  c.inPorts.add('canvas', {
+    datatype: 'object',
+    control: true
   });
   // Add output ports
   c.outPorts.add('out', {
@@ -27,15 +28,20 @@ exports.getComponent = () => {
   // Provide a processing function
   c.process((input, output) => {
     // Check input preconditions
-    if (!input.hasData('in')) {
+    if (!input.hasData('canvas')) {
       return;
     }
     // Receive input data
-    const data = input.getData('in');
-    // Do something, then ...
-    // Send the output
+    var canvas = input.getData('canvas');
+    console.log("hello Yanminge!")
+    var context = canvas.getContext("2d");
+    context.strokeStyle = "#FFF";
+    context.lineWidth = 10;
+    context.strokeRect(10, 10, 100, 100);
+    context.fillStyle = "rgba(6,191,247,0.3)";
+    context.fillRect(70, 70, 100, 100);
     output.send({
-      out: data,
+      out: canvas,
     });
     // Finish processing
     output.done();
